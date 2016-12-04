@@ -11,7 +11,7 @@ import RxSwift
 import RxCocoa
 
 //delegateっぽく使う
-class ViewController: UIViewController {
+class ViewController1: UIViewController {
 //    イベント購読を解除するdisposeを生成
     let disposeBag = DisposeBag()
 //    通知元のクラスを生成
