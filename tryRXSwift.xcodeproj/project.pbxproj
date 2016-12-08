@@ -18,6 +18,8 @@
 		DD9369081DF3D84D005F62EB /* ViewController3.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD9369061DF3D84D005F62EB /* ViewController3.xib */; };
 		DD93690D1DF3F640005F62EB /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD93690B1DF3F640005F62EB /* ViewController4.swift */; };
 		DD93690E1DF3F640005F62EB /* ViewController4.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD93690C1DF3F640005F62EB /* ViewController4.xib */; };
+		DD9369111DF4E897005F62EB /* ViewController5.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD93690F1DF4E897005F62EB /* ViewController5.swift */; };
+		DD9369121DF4E897005F62EB /* ViewController5.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD9369101DF4E897005F62EB /* ViewController5.xib */; };
 		FF63B089286CC50C36F3CD9F /* Pods_tryRXSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED1F59CC2516DC1B981B2EEE /* Pods_tryRXSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +39,8 @@
 		DD9369061DF3D84D005F62EB /* ViewController3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController3.xib; sourceTree = "<group>"; };
 		DD93690B1DF3F640005F62EB /* ViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
 		DD93690C1DF3F640005F62EB /* ViewController4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController4.xib; sourceTree = "<group>"; };
+		DD93690F1DF4E897005F62EB /* ViewController5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController5.swift; sourceTree = "<group>"; };
+		DD9369101DF4E897005F62EB /* ViewController5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController5.xib; sourceTree = "<group>"; };
 		ED1F59CC2516DC1B981B2EEE /* Pods_tryRXSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tryRXSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -98,6 +102,8 @@
 				DD9369061DF3D84D005F62EB /* ViewController3.xib */,
 				DD93690B1DF3F640005F62EB /* ViewController4.swift */,
 				DD93690C1DF3F640005F62EB /* ViewController4.xib */,
+				DD93690F1DF4E897005F62EB /* ViewController5.swift */,
+				DD9369101DF4E897005F62EB /* ViewController5.xib */,
 				DD58081A1DF199A400AF22D2 /* Main.storyboard */,
 				DD58081D1DF199A400AF22D2 /* Assets.xcassets */,
 				DD58081F1DF199A400AF22D2 /* LaunchScreen.storyboard */,
@@ -171,6 +177,7 @@
 				DD5808211DF199A400AF22D2 /* LaunchScreen.storyboard in Resources */,
 				DD9369041DF3C48B005F62EB /* ViewController2.xib in Resources */,
 				DD58081E1DF199A400AF22D2 /* Assets.xcassets in Resources */,
+				DD9369121DF4E897005F62EB /* ViewController5.xib in Resources */,
 				DD93690E1DF3F640005F62EB /* ViewController4.xib in Resources */,
 				DD58081C1DF199A400AF22D2 /* Main.storyboard in Resources */,
 				DD9369081DF3D84D005F62EB /* ViewController3.xib in Resources */,
@@ -236,6 +243,7 @@
 				DD5808171DF199A400AF22D2 /* AppDelegate.swift in Sources */,
 				DD9369071DF3D84D005F62EB /* ViewController3.swift in Sources */,
 				DD9369031DF3C48B005F62EB /* ViewController2.swift in Sources */,
+				DD9369111DF4E897005F62EB /* ViewController5.swift in Sources */,
 				DD93690D1DF3F640005F62EB /* ViewController4.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

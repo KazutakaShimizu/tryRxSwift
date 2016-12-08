@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 //mapとかfilterとか、その辺使って見る
 class ViewController4: UIViewController {
     @IBOutlet var textField: UITextField!
+    @IBOutlet var textFIeld2: UITextField!
     @IBOutlet var button: UIButton!
     var label:UILabel?
     
@@ -18,8 +21,10 @@ class ViewController4: UIViewController {
         super.viewDidLoad()
         setUpView()
 //        startMapSubscribe()
-        startFilterSubscribe()
+//        startFilterSubscribed()
 //        startTakeSubscribe()
+//        startSkipSubscribe()
+        startCombineSubscribe()
     }
     
     private func setUpView(){
@@ -55,7 +60,36 @@ class ViewController4: UIViewController {
                 self?.label?.text = text.element!
                 print("hoge")
         }
-
+    }
+    
+    //    takeで送信するイベントの回数を制限する
+    private func startSkipSubscribe(){
+        textField.rx.text
+            .skip(10)
+            .subscribe {[weak self] text in
+                self?.label?.text = text.element!
+                print("hoge")
+        }
     }
 
+    //    takeで送信するイベントの回数を制限する
+    private func startRestrictSubscribe(){
+        textField.rx.text
+            .skip(10)
+            .subscribe {[weak self] text in
+                self?.label?.text = text.element!
+                print("hoge")
+        }
+    }
+    
+//    combineLatestを使って見る
+    private func startCombineSubscribe(){
+        Observable.combineLatest(textField.rx.text, textFIeld2.rx.text) { text1,text2  in
+            return (text1?.characters.count)! + (text2?.characters.count)!
+        }
+        .subscribe(onNext: { (value) in
+            print(value)
+        })
+        
+    }
 }
